@@ -1,0 +1,402 @@
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+    
+}
+
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    background-color: #09014C;
+    /* background-image: url(../img/header-bg.svg);
+    background-repeat: no-repeat;
+    background-size: 100%; */
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    pointer-events: none;
+}
+
+.animation-content{
+  background-image: url(../img/header-bg.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+:root{
+  --index: calc(1vh+1vw)
+}
+
+.title-box{
+  overflow: hidden;
+}
+
+.title{
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #fff;
+}
+
+.container{
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header{
+  padding: 30px 0 0;
+  height: 100vh;
+}
+
+.header__top{
+  display: flex;
+  gap: 160px;
+}
+
+.nav__list{
+  display: flex;
+  gap: 70px;
+  list-style-type: none;
+}
+
+.nav__item{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 28px;
+  color: #fff;
+}
+
+.nav__item a{
+  display: block;
+  padding: 0 15px;
+  border-radius: 30px;
+  transition: .5s;
+}
+
+.nav__item a:hover{
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.nav__item a:active{
+  font-weight: 600;
+}
+
+.header__content{
+  position: absolute;
+  max-width: 475px;
+  width: 100%;
+  top: 40vh;
+  overflow: hidden;
+}
+
+.header__title-box{
+  overflow: hidden;
+}
+
+.header__title{
+  display: block;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 49px;
+  margin-bottom: 10px;
+}
+
+.header__img-box{
+  position: absolute;
+  right: 0;
+  top: 75vh;
+}
+
+.header__img-line{
+  opacity: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.header__mountainUp{
+  overflow: hidden;
+  position: absolute;
+  left: 80px;
+  bottom: 24.5px;
+  z-index: -1;
+}
+
+.header__mountainUp-img{
+  display: block;
+}
+
+.header__mountainDown{
+  position: absolute;
+  overflow: hidden;
+  left: 100px;
+  bottom: -212.8px;
+  z-index: -1;
+}
+
+.header__mountainDown-img{
+  display: block;
+}
+
+.header__bear{
+  position: absolute;
+  overflow: hidden;
+  z-index: -1;
+  right: 40px;
+  bottom: 24px;
+}
+
+.header__bear-img{
+  display: block;
+}
+
+.header__fish-img{
+  position: absolute;
+  left: 470px;
+  bottom: -180px;
+}
+
+.header__sun-img{
+  position: absolute;
+  right: 140px;
+  bottom: 280px;
+  border-radius: 50%;
+  animation: sunAnimation 3s infinite linear;
+}
+
+.header__starbg-img{
+  position: absolute;
+  right: 165px;
+  bottom: 80px;
+}
+
+.header__animation-stars{
+  position: relative;
+}
+
+.header__star--1{
+  position: absolute;
+  right: 200px;
+  bottom: 230px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  opacity: 0;
+  background: #52B7EF;
+  animation: starAnimation 5s 9s infinite linear;
+}
+
+.header__star--1::after{
+  position: absolute;
+  content: '';
+  height: 9px;
+  background: linear-gradient(45.9deg, #21559E 2.91%, rgba(33, 86, 158, 1) 53.62%, rgba(30, 88, 158, 0) 74.72%);
+  left: 8px;
+  bottom: 4px;
+  border-radius: 50%;
+  transform: translateX(-50%) rotateZ(-45deg);
+  animation: starWay 5s 9s infinite linear;
+}
+
+.header__star--2{
+  position: absolute;
+  right: 300px;
+  bottom: 350px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 0;
+  background: #52B7EF;
+  animation: starAnimation 5s 11s infinite linear;
+}
+
+.header__star--2::after{
+  position: absolute;
+  content: '';
+  height: 9px;
+  background: linear-gradient(45.9deg, #21559E 2.91%, rgba(33, 86, 158, 1) 53.62%, rgba(30, 88, 158, 0) 74.72%);
+  left: 8px;
+  bottom: 4px;
+  border-radius: 50%;
+  transform: translateX(-50%) rotateZ(-45deg);
+  animation: starWay 5s 11s infinite linear;
+}
+
+.header__star--3{
+  position: absolute;
+  right: 100px;
+  bottom: 300px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  opacity: 0;
+  background: #52B7EF;
+  animation: starAnimation 5s 13s infinite linear;
+}
+
+.header__star--3::after{
+  position: absolute;
+  content: '';
+  height: 9px;
+  background: linear-gradient(45.9deg, #21559E 2.91%, rgba(33, 86, 158, 1) 53.62%, rgba(30, 88, 158, 0) 74.72%);
+  left: 8px;
+  bottom: 4px;
+  border-radius: 50%;
+  transform: translateX(-50%) rotateZ(-45deg);
+  animation: starWay 5s 13s infinite linear;
+}
+
+@keyframes starWay {
+  0%{
+    width: 0;
+    bottom: 4px;
+    left: 8px;
+  }
+  10%{
+    width: 0;
+    left: 8px;
+    bottom: 4px;
+  }
+  20%{
+    opacity: 0;
+    width: 200px;
+    left: 78px;
+    bottom: 74px;
+  }
+  100%{
+    opacity: 0;
+    width: 200px;
+    left: 78px;
+    bottom: 74px;
+  }
+}
+
+@keyframes starAnimation {
+  0%{
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  5%{
+    opacity: 1;
+    transform: translate(0, 0);
+    box-shadow: 0px 0px 10px 3px rgba(82, 183, 239, .4);
+  }
+  10%{
+    opacity: 1;
+    transform: translate(0, 0);
+    box-shadow: 0px 0px 0px 0px rgba(82, 183, 239, .4);
+  }
+  20%{
+    opacity: 0;
+    transform: translate(-70px, 70px);
+  }
+  100%{
+    opacity: 0;
+    transform: translate(-70px, 70px);
+  }
+}
+
+
+@keyframes sunAnimation {
+  0%{
+    -webkit-box-shadow: 0px 0px 12px -2px rgba(27, 56, 145, 1);
+    -moz-box-shadow: 0px 0px 12px -2px rgba(27, 56, 145, 1);
+    box-shadow: 0px 0px 12px -2px rgba(27, 56, 145, 1);
+  }
+  100%{
+    -webkit-box-shadow: 0px 0px 15px 80px rgba(27, 56, 145, 0);
+    -moz-box-shadow: 0px 0px 15px 80px rgba(27, 56, 145, 0);
+    box-shadow: 0px 0px 15px 80px rgba(27, 56, 145, 0);
+  }
+}
+
+.main{
+  padding: 150px 0;
+}
+
+.about__text{
+  margin: 25px 0;
+}
+
+.tours__items{
+  margin-top: 50px;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.tours__item{
+  width: 280px;
+  height: 168px;
+  position: relative;
+  border: 3px solid #090A5C;
+  border-radius: 25px;
+  padding: 15px;
+  transition: .3s;
+}
+
+.tours__item-title{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.tours__item-text{
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  transition: .3s;
+}
+
+.tours__item-btn{
+  width: 280px;
+  height: 52px;
+  background: #090A5C;
+  border-radius: 30px;
+  border: none;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+  position: absolute;
+  bottom: -2px;
+  left: -3px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.tours__item:hover{
+  transform: scale(1.05);
+}
+
+.tours__item:hover .tours__item-text{
+  color: #fff;
+}
+
+.tours__item-btn:active{
+  background: #fff;
+  color: #090A5C;
+}
+
