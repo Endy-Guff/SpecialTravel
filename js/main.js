@@ -119,6 +119,54 @@ if(ScrollTrigger.isTouch !== 1){
       scrub: true
     }
   })
+  gsap.from('.contacts__title',
+  {
+    x: '-50',
+    opacity: '0',
+    scrollTrigger:{
+      trigger: '.reviews__title',
+      start: '-230',
+      end: '30',
+      scrub: true
+    }
+  })
+  document.querySelectorAll('.contacts__item').forEach(el=>{
+    gsap.from(el,
+    {
+      y: '50',
+      opacity: '0',
+      scrollTrigger:{
+        trigger: el,
+        start: '-600',
+        end: '-450',
+        scrub: true
+      }
+    })
+  })
+  document.querySelectorAll('.contacts__select').forEach(el=>{
+    gsap.from(el,
+      {
+        x: '50',
+        opacity: '0',
+        scrollTrigger:{
+          trigger: el,
+          start: '-600',
+          end: '-450',
+          scrub: true
+        }
+      })
+  })
+  gsap.from('.contacts_btn',
+    {
+      x: '50',
+      opacity: '0',
+      scrollTrigger:{
+        trigger: '.contacts_btn',
+        start: '-600',
+        end: '-450',
+        scrub: true
+      }
+    })
 }
 
 const toursBtn = document.querySelectorAll('.tours__item-btn');
