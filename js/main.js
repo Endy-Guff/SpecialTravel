@@ -18,7 +18,8 @@ if(ScrollTrigger.isTouch !== 1){
   })
   gsap.from('.about__title',
   {
-    y: '35',
+    x: '-50',
+    opacity: '0',
     scrollTrigger:{
       trigger: '.about__title',
       start: '-500',
@@ -38,11 +39,83 @@ if(ScrollTrigger.isTouch !== 1){
   })
   gsap.from('.tours__title',
   {
-    y: '35',
+    x: '-50',
+    opacity: '0',
     scrollTrigger:{
       trigger: '.tours__title',
       start: '-730',
       end: '-430',
+      scrub: true
+    }
+  })
+  const toursItemAnimationCountArr = ['10', '0', '10', '0']
+  document.querySelectorAll('.tours__item').forEach((el, i)=>{
+    gsap.from(el,
+    {
+      y: '10'+toursItemAnimationCountArr[i],
+      opacity: '0',
+      scrollTrigger:{
+        trigger: el,
+        start: '-800',
+        end: '-400',
+        scrub: true
+      }
+    })
+  })
+  gsap.from('.news__title',
+  {
+    x: '-50',
+    opacity: '0',
+    scrollTrigger:{
+      trigger: '.news__title',
+      start: '-530',
+      end: '-230',
+      scrub: true
+    }
+  })
+  gsap.from('.news__items',
+  {
+    y: '50',
+    opacity: '0',
+    scrollTrigger:{
+      trigger: '.news__title',
+      start: '-400',
+      end: '-100',
+      scrub: true
+    }
+  })
+  gsap.from('.reviews__title',
+  {
+    x: '-50',
+    opacity: '0',
+    scrollTrigger:{
+      trigger: '.reviews__title',
+      start: '-530',
+      end: '-230',
+      scrub: true
+    }
+  })
+  gsap.from('.reviews__item--left',
+  {
+    x: '-50',
+    y: '50',
+    opacity: '0',
+    scrollTrigger:{
+      trigger: '.reviews__item--left',
+      start: '-530',
+      end: '-230',
+      scrub: true
+    }
+  })
+  gsap.from('.reviews__item--right',
+  {
+    x: '50',
+    y: '50',
+    opacity: '0',
+    scrollTrigger:{
+      trigger: '.reviews__item--right',
+      start: '-530',
+      end: '-230',
       scrub: true
     }
   })

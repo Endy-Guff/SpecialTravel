@@ -400,3 +400,69 @@ img{
   color: #090A5C;
 }
 
+.news{
+  padding: 50px 0;
+}
+
+.news__title{
+  margin-bottom: 50px;
+}
+
+.news__items{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 35px;
+  list-style-type: none;
+}
+
+.news__item{
+  flex-basis: 380px;
+}
+
+.news__date{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.news__text{
+  line-height: 19px;
+}
+
+.reviews{
+  padding: 50px 0;
+}
+
+.reviews__title{
+  margin-bottom: 50px;
+}
+
+.reviews__items{
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.reviews__item{
+  width: 280px;
+  height: 115px;
+  border: 3px solid #090A5C;
+  border-radius: 25px;
+  padding: 15px;
+}
+
+.reviews__name{
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  margin: 0 auto;
+}
+
+.reviews__text{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: rgba(255, 255, 255, 0.6);
+}
